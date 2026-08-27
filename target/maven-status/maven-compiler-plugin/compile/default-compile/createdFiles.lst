@@ -1,0 +1,10 @@
+com\example\jpacrud\test\TestJPA.class
+com\example\jpacrud\entity\Video.class
+com\example\jpacrud\service\impl\CategoryServiceImpl.class
+com\example\jpacrud\config\JpaConfig.class
+com\example\jpacrud\controller\CategoryController.class
+com\example\jpacrud\controller\ImageController.class
+com\example\jpacrud\service\ICategoryService.class
+com\example\jpacrud\entity\Category.class
+com\example\jpacrud\dao\ICategoryDao.class
+com\example\jpacrud\dao\impl\CategoryDao.class
