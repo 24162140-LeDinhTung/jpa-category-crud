@@ -12,11 +12,15 @@ public interface IUserService {
     void update(User user);
     void delete(int id);
     boolean updateProfile(int userId, String fullName, String phone, String avatar);
-    
-    // ===== THÊM MỚI CHO LOGIN/REGISTER =====
     User login(String username, String password);
     boolean register(String username, String password, String email, String fullname, String phone);
     boolean checkExistEmail(String email);
     boolean checkExistUsername(String username);
     boolean checkExistPhone(String phone);
+
+    boolean registerWithOTP(String username, String password, String email, String fullname, String phone);
+    boolean activateAccount(String email, String otp);
+    boolean sendOTP(String email);
+    boolean verifyOTP(String email, String otp);
+    boolean resetPassword(String email, String newPassword);
 }

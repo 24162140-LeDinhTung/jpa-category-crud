@@ -2,7 +2,6 @@ package com.example.jpacrud.entity;
 
 import java.io.Serializable;
 import java.util.Date;
-
 import jakarta.persistence.*;
 
 @Entity
@@ -42,14 +41,21 @@ public class User implements Serializable {
     @Temporal(TemporalType.DATE)
     private Date createdDate;
 
- 
+    @Column(name = "status")
+    private int status;
+
+    @Column(name = "otp")
+    private String otp;
+
+    @Column(name = "otp_expiry")
+    @Temporal(TemporalType.TIMESTAMP)
+    private Date otpExpiry;
+
     public User() {
+        this.status = 0;
     }
 
-   
-    public User(String email, String userName, String fullName, 
-                String password, String avatar, int roleId, 
-                String phone, Date createdDate) {
+    public User(String email, String userName, String fullName, String password, String avatar, int roleId, String phone, Date createdDate) {
         this.email = email;
         this.userName = userName;
         this.fullName = fullName;
@@ -58,9 +64,9 @@ public class User implements Serializable {
         this.roleId = roleId;
         this.phone = phone;
         this.createdDate = createdDate;
+        this.status = 0;
     }
 
-  
     public int getId() { return id; }
     public void setId(int id) { this.id = id; }
 
@@ -87,4 +93,13 @@ public class User implements Serializable {
 
     public Date getCreatedDate() { return createdDate; }
     public void setCreatedDate(Date createdDate) { this.createdDate = createdDate; }
+
+    public int getStatus() { return status; }
+    public void setStatus(int status) { this.status = status; }
+
+    public String getOtp() { return otp; }
+    public void setOtp(String otp) { this.otp = otp; }
+
+    public Date getOtpExpiry() { return otpExpiry; }
+    public void setOtpExpiry(Date otpExpiry) { this.otpExpiry = otpExpiry; }
 }
