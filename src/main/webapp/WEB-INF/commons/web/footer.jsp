@@ -1,15 +1,21 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
-<footer class="bg-dark text-white text-center py-3 mt-4">
+<footer class="footer-custom">
     <div class="container">
-        <p class="mb-0">
-            <i class="fas fa-graduation-cap"></i> MyShop &copy; 2026 - 
-            ThS. Nguyễn Hữu Trung
-        </p>
-        <p class="mb-0">
-            <small>
-                <i class="fas fa-code"></i> JPA CRUD - Sitemesh 3.2.1
-            </small>
-        </p>
+        <div class="row">
+            <div class="col-md-6">
+                <p class="mb-0">
+                    <i class="fas fa-graduation-cap"></i> MyShop &copy; 2026
+                </p>
+                <p class="mb-0 small text-muted">
+                    ThS. Nguyen Huu Trung - JPA CRUD
+                </p>
+            </div>
+            <div class="col-md-6 text-md-end">
+                <a href="#" class="me-3">About</a>
+                <a href="#" class="me-3">Contact</a>
+                <a href="#">Privacy</a>
+            </div>
+        </div>
     </div>
 </footer>

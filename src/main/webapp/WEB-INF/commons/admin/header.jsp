@@ -12,13 +12,13 @@
         <div class="collapse navbar-collapse" id="adminNav">
             <ul class="navbar-nav me-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="${pageContext.request.contextPath}/admin/categories">
-                        <i class="fas fa-list"></i> Danh mục
+                    <a class="nav-link" href="${pageContext.request.contextPath}/admin/product/list">
+                        <i class="fas fa-box"></i> San pham
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="${pageContext.request.contextPath}/admin/category/add">
-                        <i class="fas fa-plus"></i> Thêm danh mục
+                    <a class="nav-link" href="${pageContext.request.contextPath}/admin/categories">
+                        <i class="fas fa-list"></i> Danh muc
                     </a>
                 </li>
             </ul>
@@ -29,11 +29,11 @@
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end">
                         <li><a class="dropdown-item" href="${pageContext.request.contextPath}/profile">
-                            <i class="fas fa-user-cog"></i> Thông tin
+                            <i class="fas fa-user-cog"></i> Thong tin
                         </a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item text-danger" href="${pageContext.request.contextPath}/logout">
-                            <i class="fas fa-sign-out-alt"></i> Đăng xuất
+                            <i class="fas fa-sign-out-alt"></i> Dang xuat
                         </a></li>
                     </ul>
                 </li>

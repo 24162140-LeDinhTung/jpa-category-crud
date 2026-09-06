@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sitemesh>
+    <!-- Decorator mặc định cho web -->
     <mapping path="/*" decorator="web.jsp"/>
+    
+    <!-- Decorator riêng cho admin -->
     <mapping path="/admin/*" decorator="admin.jsp"/>
     
     <!-- Không áp dụng decorator cho login, register -->
     <mapping path="/WEB-INF/views/login.jsp" exclude="true"/>
     <mapping path="/WEB-INF/views/register.jsp" exclude="true"/>
+    <mapping path="/WEB-INF/views/verify-otp.jsp" exclude="true"/>
+    <mapping path="/WEB-INF/views/forgot-password.jsp" exclude="true"/>
+    <mapping path="/WEB-INF/views/reset-password.jsp" exclude="true"/>
 </sitemesh>
